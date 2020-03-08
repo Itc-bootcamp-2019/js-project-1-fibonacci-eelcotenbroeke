@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="eelco-ms04.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row-1">
+        <div class="col-1"></div>
+        <div class="col-6">
+          <h1 class="fibCalc">Fibonacci Calculator</h1>
+        </div>
+        <div class="col-5"></div>
+      </div>
+      <div class="row-2">
+        <div class="col-1"></div>
+        <div class="col-6">
+          <div id="fibForm">
+            The fibonacci of <input id="userInput" type="number" />
+            <button
+              style="font-size: 16px;"
+              class="btn btn-primary"
+              id="isButton"
+              type="button"
+              value="IS"
+              onclick="fibonacci(document.getElementById('userInput').value)"
+            >
+              IS
+            </button>
+            <span id="userOutput"></span>
+          </div>
+        </div>
+        <div class="col-5">
+          <span id="error"></span>
+        </div>
+      </div>
+    </div>
+    <script src="eelco-ms04.js"></script>
+  </body>
+</html>
