@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="eelco-ms08.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row1">
+        <div class="col-1"></div>
+        <div class="col-8">
+          <h1 class="fibCalc">Fibonacci Calculator</h1>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row2">
+        <div class="col-1"></div>
+        <div class="col-11">
+          <div class="fibForm" id="fibForm">
+            <div class="subtitle">The fibonacci of</div>
+            <input
+              placeholder="#"
+              class="userInput"
+              id="userInput"
+              type="number"
+            />
+            <button
+              class="btn btn-primary"
+              id="isButton"
+              type="submit"
+              value="IS"
+            >
+              IS
+            </button>
+            <div class="loader1" id="loader1"></div>
+            <span id="userOutput"></span>
+            <span class="userOutputError" id="userOutputError"></span>
+            <span class="smallOne" id="smallOne"
+              >Sorry number cannot be smaller than 1</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="col-1"></div>
+        <div class="col-4">
+          <label class="labelCB"
+            ><input class="cb1" type="checkbox" id="checkBox1" value="" /> Save
+            calculation</label
+          >
+          <span class="error" id="error"></span>
+        </div>
+        <div class="col-7"></div>
+      </div>
+      <div class="row4">
+        <div class="col-1"></div>
+        <div class="col-8">
+          <span class="result1">Results</span>
+          <div class="loader2" id="loader2"></div>
+        </div>
+      </div>
+      <div class="row5">
+        <div class="col-1"></div>
+        <div class="col-11">
+          <div id="historyList"></div>
+        </div>
+      </div>
+    </div>
+    <script src="eelco-ms08.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="eelco-ms07.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row1">
+        <div class="col-1"></div>
+        <div class="col-8">
+          <h1 class="fibCalc">Fibonacci Calculator</h1>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row2">
+        <div class="col-1"></div>
+        <div class="col-8">
+          <div class="fibForm" id="fibForm">
+            The fibonacci of
+            <input
+              placeholder="#"
+              class="userInput"
+              id="userInput"
+              type="number"
+            />
+            <button
+              class="btn btn-primary"
+              id="isButton"
+              type="button"
+              value="IS"
+              onclick="getFibonacci(document.getElementById('userInput').value)"
+            >
+              IS
+            </button>
+            <div class="result0">
+              <div class="loader1" id="loader1"></div>
+              <span id="userOutput"></span>
+              <span id="userOutputError"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="col-1"></div>
+        <div class="col-3">
+          <span class="error" id="error"></span>
+        </div>
+        <div class="col-8"></div>
+      </div>
+      <div class="row4">
+        <div class="col-1"></div>
+        <div class="col-8">
+          <span class="result1">Results</span>
+          <div class="loader2" id="loader2"></div>
+        </div>
+      </div>
+      <div class="row5">
+        <div class="col-1"></div>
+        <div class="col-11">
+          <div id="historyList"></div>
+        </div>
+      </div>
+    </div>
+    <script src="eelco-ms07.js"></script>
+  </body>
+</html>
